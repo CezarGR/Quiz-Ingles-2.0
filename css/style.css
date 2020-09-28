@@ -1,13 +1,14 @@
 .cardss{
-    width: 500px;
-    height: 358px;
+    width: 100vh;
+    height: 40vh;
     position: absolute;
     top: 0px;
     bottom: 0px;
     right: 0px;
     left: 0px;
     margin: auto;
-    box-sizing: inherit
+    box-sizing: inherit;
+    
 }
 .cardss2{
     width: 300px;
