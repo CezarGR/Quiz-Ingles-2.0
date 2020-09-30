@@ -36,12 +36,12 @@
 <!--------------------------------------------------------------------------------------------------------------------------------->
 
                 
-            <div class="col s10 m6 l6 ">
+            <div class="col s10 m6 l6  ">
 
-                <div class="carousel carousel-slider carosel">
+                <div class="carousel carousel-slider carosel" style="top: 50px;">
                         
-                            <div class="carousel-item" href="#one!" >
-                                <div class="card small" style="top: 40px;">
+                            <div class="carousel-item" href="#one!">
+                                <div class="card medium">
                                     <div class="card-image">
                                     <img src="img/2927262.jpg">
                                     <span class="card-title">    </span>
@@ -53,10 +53,10 @@
                                     </div>
             
                                     <div class="card-action center-align">
-                                        <a class="resp" href="suse.html">XXXX</a>
-                                        <a class="resp" href="suse.html">XXXX</a>
-                                        <a class="resp" href="suse.html">XXXX</a>
-                                        <a class="resp" href="suse.html">XXXX</a>
+                                        <a class="resp bott" role="alert">XXXX</a>
+                                        <a class="resp bott" role="alert">XXXX</a>
+                                        <a class="resp bott" role="alert">XXXX</a>
+                                        <a class="resp bott" role="alert">XXXX</a>
                                     </a>
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@
 
                         <!-------------------------------------------------------------------------------------------------------------------->
                             <div class="carousel-item" href="#two!" >
-                                <div class="card small" style="top: 40px;">
+                                <div class="card medium">
                                     <div class="card-image">
                                     <img src="img/2927262.jpg">
                                     <span class="card-title">    </span>
@@ -86,8 +86,8 @@
                             </div>
 
                             <!-------------------------------------------------------------------------------------------------------------------->
-                            <div class="carousel-item" href="#two!" >
-                                <div class="card small" style="top: 40px;">
+                            <div class="carousel-item" href="#three!" >
+                                <div class="card medium" >
                                     <div class="card-image">
                                     <img src="img/2927262.jpg">
                                     <span class="card-title">    </span>
@@ -98,12 +98,13 @@
                                     I am convenient because I require little markup to use effectively.</p>
                                     </div>
             
-                                    <div class="card-action center-align"  style="font-size: 1rem;">
-                                    
-                                        <a class="resp" href="suse.html">mmmm</a>
-                                        <a class="resp" href="suse.html">mmmm</a>
-                                        <a class="resp" href="suse.html">mmmm</a>
-                                        <a class="resp" href="suse.html">mmmm</a>
+                                    <div class="card-action center-align">
+                                        
+                                            <a class="resp" href="suse.html">mmmm</a>
+                                            <a class="resp" href="suse.html">mmmm</a>
+                                            <a class="resp" href="suse.html">mmmm</a>
+                                            <a class="resp" href="suse.html">mmmm</a>
+                                  
                                  
                                     </div>
                                 </div>
@@ -132,6 +133,10 @@
   
 
         <script>
+
+            $('.bott').click(function(){
+                alert('Hello Word');
+            })
            
            $('.next').click(function(){
                 $('.carousel').carousel('next');
