@@ -50,12 +50,12 @@
                                     <div class="card-content center-align">
                                     <p>What is the command for updating packages, in a Suse distribution?</p>
                                     </div>
-            
+                            
                                     <div class="card-action center-align">
-                                        <a class="resp bott0" role="button" onclick="proximo()">apt-get update</a>
-                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'; ">dnf update</a>
-                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'">zypper update</a>
-                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'">apt update</a>
+                                        <a class="resp bott0" role="button" onclick="proximo()">zypper update</a>
+                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'; proximo() ">dnf update</a>
+                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'; proximo()">apt-get update</a>
+                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'; proximo()">apt update</a>
                                     </a>
                                     </div>
                                 </div>
@@ -74,8 +74,8 @@
                                     </div>
             
                                     <div class="card-action center-align">
-                                        <a class="resp bott1" role="button" onclick="proximo()">True</a>
-                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'">False</a>
+                                        <a class="resp bott1" role="button" onclick="proximo()">False</a>
+                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'; proximo()">True</a>
                                     </a>
                                     </div>
                                 </div>
@@ -96,10 +96,10 @@
             
                                     <div class="card-action center-align">
                                         
-                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'">There was no foundation</a>
-                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'; proximo()">1992</a>
-                                        <a class="resp bott2" role="button" onclick="proximo()">1995</a>
-                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'">1991</a>
+                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'; proximo()">There was no foundation</a>
+                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'; proximo()">1995</a>
+                                        <a class="resp bott2" role="button" onclick="proximo()">1992</a>
+                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'; proximo()">1991</a>
                                     </a>
                                  
                                     </div>
@@ -120,10 +120,10 @@
             
                                     <div class="card-action center-align">
 
-                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'">US$ 19,99 /mês</a>
-                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'">US$ 4,99 /mês</a>
+                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'; proximo()">US$ 19,99 /mês</a>
+                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'; proximo()">US$ 4,99 /mês</a>
                                         <a class="resp bott3" role="button" onclick="proximo()">Free</a>
-                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'">$ 39.99 one-time fee</a>
+                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'; proximo()">$ 39.99 one-time fee</a>
                                     </a>
                                     </div>
                                 </div>
@@ -141,8 +141,8 @@
                                     </div>
             
                                     <div class="card-action center-align">
-                                        <a class="resp bott4" role="button" onclick="proximo()">No</a>
-                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'">Yes</a>
+                                        <a class="resp bott4" role="button">No</a>
+                                        <a class="resp bott" role="button" onclick="style.backgroundColor = 'red'; proximo()">Yes</a>
                                     </a>
                                     </div>
                                 </div>
@@ -199,6 +199,9 @@
             $('.bott4').click(function(){
                 acert();
                 $('.bott4').css("background","green");
+               
+                alert(acerto = (acerto*100)/5);
+             
             })
 
             acert =  function(){
@@ -214,8 +217,7 @@
 
                 if(controle == 5){
                 alert(acerto = (acerto*100)/5);
-
-            }
+                }
            });
 
            $('.pev').click(anterior = function(){
